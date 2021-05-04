@@ -1,0 +1,120 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+/* - Mobile: 375px
+- Desktop: 1440px */
+:root {
+    --clr-Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --clr-Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --clr-Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+    --ff-bold: 'Manrope', sans-serif;
+}
+
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 40rem;
+    width: 84rem;
+    background-color: var(--Light-Grayish-Blue);
+    padding: 10rem 17rem;
+}
+h1,h4,p {
+    font-family: var(--ff-bold);
+}
+h1 {
+   margin-bottom: 1.3rem;
+   font-size: 1.4rem;
+   color: var(--clr-Very-Dark-Grayish-Blue);
+}
+h4 {
+    color: var(--clr-Very-Dark-Grayish-Blue);
+}
+p {
+ font-size: 0.9rem;
+ line-height: 1.3;
+ color: var(--clr-Desaturated-Dark-Blue);
+}
+.container {
+    width: 49rem;
+    height: 19rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    box-shadow: -9px 40px 103px -34px rgba(128,123,123,0.88);
+-webkit-box-shadow: -9px 40px 103px -34px rgba(128,123,123,0.88);
+-moz-box-shadow: -9px 40px 103px -34px rgba(128,123,123,0.88);
+}
+.image-container img{
+    width: 18rem;
+    height: 19rem;
+}
+.text-container {
+    padding: 1.8rem 3.2rem 2rem 3rem;
+    margin-bottom: 1rem;
+
+}
+.description {
+    margin-bottom: 1.3rem;
+}
+.profile-container {
+    position: relative;
+}
+.profile-container .profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile img {
+    height: 3.2rem;
+    border-radius: 50%;
+
+}
+.profile-text {
+    padding-right: 7.4rem;
+}
+.profile-text h4 {
+    margin-bottom: 0.2rem;
+}
+.share-btn {
+    background-color: var(--Light-Grayish-Blue);
+    padding: 10px;
+    border-radius: 50%;
+}
+.share-btn:hover {
+    background-color: var(--clr-Very-Dark-Grayish-Blue);
+    color: #fff;
+}
+.share-container {
+    background-color: var(--clr-Very-Dark-Grayish-Blue);
+    height: 3.5rem;
+    width: 15.4rem;
+    position: absolute;
+    right: -6rem;
+    top:-4rem;
+    border-radius: 1rem;
+    padding: 1.1rem 1rem;
+    display: none;
+}
+.share-container h1{
+    display: inline-block;
+    color: #fff;
+    padding:0 1.5rem 0 1rem ;
+    font-family: var(--ff-bold);
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+   
+
+}
+.share-container .btn{
+    padding-right: 0.7rem;
+    color: #fff;
+}
+.show-container {
+    display: block;
+}
